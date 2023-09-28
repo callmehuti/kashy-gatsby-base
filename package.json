@@ -1,0 +1,42 @@
+{
+  "name": "my-first-gatsby-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "my-first-gatsby-site",
+  "author": "callmehuti",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit",
+    "sass": "sass src/scss/main.scss src/assets/css/main.css -w"
+  },
+  "dependencies": {
+    "@types/react-bootstrap": "^0.32.33",
+    "gatsby": "^5.12.4",
+    "gatsby-plugin-image": "^3.12.0",
+    "gatsby-plugin-react-helmet": "^6.12.0",
+    "gatsby-plugin-react-svg": "^3.3.0",
+    "gatsby-plugin-sharp": "^5.12.0",
+    "gatsby-source-filesystem": "^5.12.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.9.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-helmet-async": "^1.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.3",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "@types/react-helmet": "^6.1.7",
+    "typescript": "^5.1.6"
+  },
+  "main": "index.js",
+  "license": "ISC"
+}
