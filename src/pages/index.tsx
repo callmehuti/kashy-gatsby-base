@@ -11,7 +11,7 @@ const IndexPage: FC = () => {
   return (
     <Layout>
       <div className="container">
-        <p>I'm making this by following the Gatsby Tutorial.</p>
+        <h2>Home Page content goes here</h2>
       </div>
     </Layout>
   );

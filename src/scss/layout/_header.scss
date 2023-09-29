@@ -1,23 +1,51 @@
-.header {
-  background: #eee;
-}
+@use "../abstracts";
 
-.top-bar {
+%flexItemCenter {
   display: flex;
   align-items: center;
 }
 
+.header {
+  background: var(--header-bg-color);
+}
+
+.top-bar {
+  @extend %flexItemCenter;
+  height: 52px;
+
+  &__more {
+    display: none;
+
+    // For tablet
+    @include abstracts.breakpoint(lg) {
+      display: block;
+    }
+  }
+}
+
 .navbar {
-  margin-left: 144px;
+    // For tablet
+    @include abstracts.breakpoint(lg) {
+      // display: none;
+    }
 
   &__list {
-    display: flex;
-    align-items: center;
+    @extend %flexItemCenter;
+    gap: 220px;
   }
 
   &__link {
     font-size: 2rem;
-    font-weight: 300;
-    line-height: 2.2rem;
+    font-weight: 200;
+    line-height: 146.667%;
+  }
+}
+
+.kashy-partner {
+  margin-left: auto;
+
+  // For tablet
+  @include abstracts.breakpoint(lg) {
+    display: none;
   }
 }

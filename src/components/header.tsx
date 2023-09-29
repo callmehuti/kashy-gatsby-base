@@ -2,7 +2,21 @@ import React, { FC } from "react";
 import { Link } from "gatsby";
 
 // Import Icon
+// Was trying to use svg file but not working, so changing to add logo by img instead of vector
 import Icon from "../assets/img/logo-icon-small.png";
+// Please install plugin
+// https://www.gatsbyjs.com/plugins/gatsby-plugin-fontawesome-css/
+// https://fontawesome.com/docs/apis/javascript/import-icons
+// Check gatsby-config.js to ensure that plugins is added.
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebook,
+  faInstagram,
+  faLinkedin,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
 
 // Import Img
 import MoreImg from "../assets/img/MTAQ-Transparent-Logo.webp";
@@ -14,7 +28,7 @@ const Header: FC = () => {
         <div className="top-bar">
           {/* Logo */}
           <div className="logo">
-            <img src={Icon} alt="Logo" />
+            <img src={Icon} alt="Logo" className="logo__img" />
           </div>
 
           {/* Navbar */}
@@ -27,27 +41,40 @@ const Header: FC = () => {
               </li>
               <li>
                 <Link to="/about" className="navbar__link">
-                  About
+                  About Us
                 </Link>
               </li>
-              {/* <li><Link to="/blog" className="navbar__link">Blog</Link></li> */}
+              <li>
+                <Link to="/blog" className="navbar__link">
+                  Blog
+                </Link>
+              </li>
             </ul>
           </nav>
+
+          {/* Hamburger Menu */}
+          <button className="top-bar__more">
+            <FontAwesomeIcon
+              icon={faBars}
+              className="top-bar__more-hamburger"
+            />
+          </button>
 
           {/* Action Button */}
           {/* For future feature: Log in / Sign up */}
           {/* But current website doesn't have these functions, and based on the current layout, they want MTAQ img on the right side of the navbar */}
 
-          <div className="top-bar__more">
+          {/* Kashy Corporate Partners */}
+          <div className="kashy-partner">
             <a
               href="https://www.mtaq.com.au/"
-              className="top-bar__more-link"
+              className="kashy-partner__link"
               target="_blank"
             >
               <img
                 src={MoreImg}
                 alt="MTA Queensland Website"
-                className="top-bar__more-img"
+                className="kashy-partner__img"
               />
             </a>
           </div>

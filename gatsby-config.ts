@@ -1,4 +1,4 @@
-import type { GatsbyConfig } from "gatsby"
+import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   siteMetadata: {
@@ -13,8 +13,26 @@ const config: GatsbyConfig = {
   // Please add plugins everytime you install them
   plugins: [
     "gatsby-plugin-sharp",
+    // I'm trying to use plugin to import and use svg file but it doesn't work for me, so changing to use React from fontawesome.
     "gatsby-plugin-react-svg",
+    `gatsby-plugin-fontawesome-css`,
+    {
+      resolve: `gatsby-omni-font-loader`,
+      options: {
+        enableListener: true,
+        preconnect: [
+          `https://fonts.googleapis.com`,
+          `https://fonts.gstatic.com`,
+          `https://fonts.google.com/`,
+        ],
+        web: [
+          {
+            name: [`Sora`, `Poppins`],
+          },
+        ],
+      },
+    },
   ],
-}
+};
 
-export default config
+export default config;
