@@ -14,16 +14,16 @@ import {
 
 const KashyIntroduction: FC = () => {
   return (
-    <section className="kashy-introduction">
+    <section className="hero-introduction">
       <img src={FullSizeLogo} alt="" className="logo-large" />
-      <h1 className="section-heading kashy-introduction__heading">
+      <h1 className="section-heading hero-introduction__heading">
         Mobile mechanics that save you time and money, honestly
       </h1>
-      <p className="section-desc kashy-introduction__desc">
+      <p className="section-desc hero-introduction__desc">
         Have you ever wondered why seeing a mechanic feels so difficult? It's
         why we created Kashy.
       </p>
-      <p className="section-desc kashy-introduction__desc">
+      <p className="section-desc hero-introduction__desc">
         Request a quote and one of our Kashy mechanics will come to your home or
         work for convenient service, repairs or diagnosis at a set price.
       </p>

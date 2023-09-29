@@ -18,7 +18,7 @@ import MoreImg from "../assets/img/MTAQ-Transparent-Logo.webp";
 
 const Header: FC = () => {
   return (
-    <header id="header" className="header">
+    <header id="header" className="header header--fixed">
       <div className="container">
         <div className="top-bar">
           {/* Logo */}

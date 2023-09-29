@@ -1,5 +1,6 @@
 // Please declare module that you want to use in each tsx file
 declare module '*.jpg';
+declare module '*.jpeg';
 declare module '*.png';
 declare module '*.webp';
 declare module '*.scss';

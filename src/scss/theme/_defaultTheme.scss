@@ -1,10 +1,15 @@
 html {
   --text-color: #000;
+  --primary-color: #d4452d;
+  --secondary-color: #ffbbaa;
+  --btn-shadow-color: rgba(212, 69, 45, 0.8);
   // --icon-color
   // use filter css generator if needed
 
   --header-bg-color: #fff;
   --body-bg-color: #f1f2ed;
   --homepage-btn-color: #ffbbaa;
-  --homepage-btn-shadow-color: rgba(212, 69, 45, 0.8);
+  --form-placeholder-color: #696c6c;
+  --form-checkbox-color: #696c6c;
+  --review-bg-color: #f1f2ed;
 }
