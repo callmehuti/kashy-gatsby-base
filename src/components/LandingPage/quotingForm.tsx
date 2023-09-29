@@ -2,9 +2,9 @@ import React, { FC } from 'react';
 
 const QuotingForm: FC = () => {
   return (
-    <main>
+    <div>
       <p>Modify Quoting Form !</p>
-    </main>
+    </div>
   );
 }
 

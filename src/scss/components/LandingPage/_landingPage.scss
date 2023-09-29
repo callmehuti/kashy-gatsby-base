@@ -1,0 +1,12 @@
+@use "../../abstracts";
+// For doing responsive
+
+.hero__inner {
+
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0;
+  height: 95vh;
+}

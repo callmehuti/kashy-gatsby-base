@@ -11,12 +11,7 @@ import Icon from "../assets/img/logo-icon-small.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import {
-  faFacebook,
-  faInstagram,
-  faLinkedin,
-  faYoutube,
-} from "@fortawesome/free-brands-svg-icons";
+
 
 // Import Img
 import MoreImg from "../assets/img/MTAQ-Transparent-Logo.webp";

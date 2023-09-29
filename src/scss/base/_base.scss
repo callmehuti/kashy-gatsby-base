@@ -42,3 +42,38 @@ select {
   font-family: inherit;
   color: inherit;
 }
+
+.btn {
+  --height: 50px;
+  display: inline-block;
+  min-width: 144px;
+  height: var(--height);
+  line-height: var(--height);
+  border-radius: 16px;
+  border: 1px solid rgba(212, 69, 45, 0.5);
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.btn:hover {
+  border: none;
+  box-shadow: none;
+  background: var(--hover-btn-color);
+  transition: 0.4s ease 0s;
+}
+
+.section-heading {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  color: var(--text-color);
+}
+
+.section-desc {
+  margin-top: 24px;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: var(--text-color);
+}
