@@ -18,26 +18,37 @@
 
     // For tablet
     @include abstracts.breakpoint(lg) {
+      display: none;
+    }
+
+    // For phone
+    @include abstracts.breakpoint(sm) {
       display: block;
     }
   }
 }
 
 .navbar {
-    // For tablet
-    @include abstracts.breakpoint(lg) {
-      // display: none;
-    }
-
   &__list {
     @extend %flexItemCenter;
-    gap: 220px;
+    gap: 100px;
+
+    // For fixing style under 767
+    @include abstracts.breakpoint(lg) {
+      gap: 40px;
+    }
+
+    // For phone
+    @include abstracts.breakpoint(sm) {
+      display: none;
+    }
   }
 
   &__link {
     font-size: 2rem;
     font-weight: 200;
     line-height: 146.667%;
+    padding: 8px 16px;
   }
 }
 

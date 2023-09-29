@@ -67,6 +67,7 @@ body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
   color: var(--text-color);
+  background: var(--body-bg-color);
 }
 
 a {
@@ -1130,7 +1131,8 @@ select {
 }
 html {
   --text-color: #000;
-  --header-bg-color: #eee;
+  --header-bg-color: #fff;
+  --body-bg-color: #f1f2ed;
 }
 
 .navbar__list, .top-bar {
@@ -1150,17 +1152,33 @@ html {
 }
 @media (max-width: 991.98px) {
   .top-bar__more {
+    display: none;
+  }
+}
+@media (max-width: 575.98px) {
+  .top-bar__more {
     display: block;
   }
 }
 
 .navbar__list {
-  gap: 220px;
+  gap: 100px;
+}
+@media (max-width: 991.98px) {
+  .navbar__list {
+    gap: 40px;
+  }
+}
+@media (max-width: 575.98px) {
+  .navbar__list {
+    display: none;
+  }
 }
 .navbar__link {
   font-size: 2rem;
   font-weight: 200;
   line-height: 146.667%;
+  padding: 8px 16px;
 }
 
 .kashy-partner {
@@ -1177,6 +1195,16 @@ html {
   width: 35px;
   height: 35px;
   object-fit: cover;
+}
+@media (max-width: 991.98px) {
+  .logo {
+    margin-right: 20%;
+  }
+}
+@media (max-width: 575.98px) {
+  .logo {
+    margin-right: auto;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

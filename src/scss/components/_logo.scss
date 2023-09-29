@@ -1,8 +1,19 @@
 // Style for component from header.tsx
+@use "../abstracts";
 
 .logo {
   margin-right: auto;
   width: 35px;
   height: 35px;
   object-fit: cover;
+
+  // For tablet
+  @include abstracts.breakpoint(lg) {
+    margin-right: 20%;
+  }
+
+  // For phone
+  @include abstracts.breakpoint(sm) {
+    margin-right: auto;
+  }
 }
