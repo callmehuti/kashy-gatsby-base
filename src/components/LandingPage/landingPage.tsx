@@ -2,13 +2,13 @@ import React, { FC } from 'react';
 import KashyIntroduction from './kashyIntroduction';
 import QuotingForm from './quotingForm';
 
-const ContentHero: FC = () => {
+const LandingPage: FC = () => {
   return (
-    <div>
+    <div className='hero'>
       <KashyIntroduction />
       <QuotingForm />
     </div>
   );
 }
 
-export default ContentHero;
+export default LandingPage;
