@@ -2,8 +2,8 @@ import React, { FC } from 'react';
 
 const VideoIntroPhotos: FC = () => {
   return (
-    <div>
-      <p>Sample Code</p>
+    <div className='gallery-inner'>
+      
     </div>
   );
 }

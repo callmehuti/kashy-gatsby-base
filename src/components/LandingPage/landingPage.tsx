@@ -26,7 +26,9 @@ const LandingPage: FC = () => {
 
       {/* Video Intro + Photos */}
       <div className="gallery">
-        <VideoIntroPhotos />
+        <div className="container">
+          <VideoIntroPhotos />
+        </div>
       </div>
     </div>
   );
