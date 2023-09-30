@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import Layout from "../components/layout";
-import AboutUsPage from "../components/AboutUsPage/aboutusPage";
+import AboutUsPage from "../components/content/about-us-page/index";
 
 const AboutPage: FC = () => {
   return (
