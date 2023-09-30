@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import KashyIntroduction from "./kashyIntroduction";
+// import KashyIntroduction from "./kashyIntroduction";
 import QuotingForm from "./quotingForm";
 import CustomerReviews from "./customerReviews";
 import VideoIntroPhotos from "./videoIntroPhotos";
@@ -11,7 +11,7 @@ const LandingPage: FC = () => {
       <div className="container">
         <section className="hero">
           <div className="hero__inner">
-            <KashyIntroduction />
+            {/* <KashyIntroduction /> */}
             <QuotingForm />
           </div>
         </section>

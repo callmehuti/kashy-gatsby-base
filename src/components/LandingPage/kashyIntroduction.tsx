@@ -3,14 +3,6 @@ import React, { FC } from "react";
 // Import Large Logo
 import FullSizeLogo from "../../assets/img/full-size-logo.png";
 
-// Import Social Media Icon from FontAwesome
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebook,
-  faInstagram,
-  faLinkedin,
-  faYoutube,
-} from "@fortawesome/free-brands-svg-icons";
 
 const KashyIntroduction: FC = () => {
   return (
@@ -73,7 +65,9 @@ const KashyIntroduction: FC = () => {
           target="_blank"
           className="hero-socials__link"
         >
-          <FontAwesomeIcon icon={faFacebook} className="hero-socials__icon" />
+          {/* <FontAwesomeIcon icon={faFacebook} className="hero-socials__icon" /> */}
+          <p>Icon</p>
+
         </a>
 
         {/* Instagram */}
@@ -82,7 +76,8 @@ const KashyIntroduction: FC = () => {
           target="_blank"
           className="hero-socials__link"
         >
-          <FontAwesomeIcon icon={faInstagram} className="hero-socials__icon" />
+          {/* <FontAwesomeIcon icon={faInstagram} className="hero-socials__icon" /> */}
+          <p>Icon</p>
         </a>
 
         {/* Linked In */}
@@ -91,7 +86,9 @@ const KashyIntroduction: FC = () => {
           target="_blank"
           className="hero-socials__link"
         >
-          <FontAwesomeIcon icon={faLinkedin} className="hero-socials__icon" />
+          {/* <FontAwesomeIcon icon={faLinkedin} className="hero-socials__icon" /> */}
+          <p>Icon</p>
+
         </a>
 
         {/* Youtube */}
@@ -100,7 +97,9 @@ const KashyIntroduction: FC = () => {
           target="_blank"
           className="hero-socials__link"
         >
-          <FontAwesomeIcon icon={faYoutube} className="hero-socials__icon" />
+          {/* <FontAwesomeIcon icon={faYoutube} className="hero-socials__icon" /> */}
+          <p>Icon</p>
+
         </a>
       </div>
     </section>

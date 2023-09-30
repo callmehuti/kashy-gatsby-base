@@ -10,7 +10,7 @@ import "../assets/css/main.css";
 const IndexPage: FC = () => {
   return (
     <Layout>
-      <LandingPage />
+      {/* <LandingPage /> */}
       <div className="container"></div>
     </Layout>
   );

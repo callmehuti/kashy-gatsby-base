@@ -9,9 +9,10 @@ import Icon from "../assets/img/logo-icon-small.png";
 // https://fontawesome.com/docs/apis/javascript/import-icons
 // Check gatsby-config.js to ensure that plugins is added.
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faBars } from "@fortawesome/free-solid-svg-icons";
 
+import MyIcon from "../assets/icon/hamburger.svg";
 
 // Import Img
 import MoreImg from "../assets/img/MTAQ-Transparent-Logo.webp";
@@ -49,10 +50,13 @@ const Header: FC = () => {
 
           {/* Hamburger Menu */}
           <button className="top-bar__more">
-            <FontAwesomeIcon
+            {/* <FontAwesomeIcon
               icon={faBars}
               className="top-bar__more-hamburger"
-            />
+            /> */}
+            <button className="top-bar__more-hamburger">
+              <MyIcon />
+            </button>
           </button>
 
           {/* Action Button */}
