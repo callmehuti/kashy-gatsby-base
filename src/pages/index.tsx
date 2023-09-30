@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import Layout from "../components/layout";
-import LandingPage from "../components/LandingPage/landingPage";
+// import LandingPage from "../components/LandingPage/landingPage";
+import IndexHomePage from "../components/content/home-page";
 
 // Import css <- from scss -> main.scss
 // Please install sass, then run cli: npm run sass if you change any styles
@@ -10,7 +11,7 @@ import "../assets/css/main.css";
 const IndexPage: FC = () => {
   return (
     <Layout>
-      <LandingPage />
+      <IndexHomePage />
       <div className="container"></div>
     </Layout>
   );
