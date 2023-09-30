@@ -54,9 +54,8 @@ const Header: FC = () => {
               icon={faBars}
               className="top-bar__more-hamburger"
             /> */}
-            <button className="top-bar__more-hamburger">
-              <MyIcon />
-            </button>
+
+            <MyIcon className="top-bar__more-hamburger" />
           </button>
 
           {/* Action Button */}

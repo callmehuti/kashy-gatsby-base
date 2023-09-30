@@ -3,6 +3,8 @@ import React, { FC } from "react";
 // Import Large Logo
 import FullSizeLogo from "../../assets/img/full-size-logo.png";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faInstagram, faLinkedin, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 const KashyIntroduction: FC = () => {
   return (
@@ -65,41 +67,34 @@ const KashyIntroduction: FC = () => {
           target="_blank"
           className="hero-socials__link"
         >
-          {/* <FontAwesomeIcon icon={faFacebook} className="hero-socials__icon" /> */}
-          <p>Icon</p>
-
+          <FontAwesomeIcon icon={faFacebook} className="hero-socials__icon" />
         </a>
 
         {/* Instagram */}
         <a
-          href="https://www.facebook.com/KashyAustralia"
+          href="https://www.instagram.com/kashyaustralia/"
           target="_blank"
           className="hero-socials__link"
         >
-          {/* <FontAwesomeIcon icon={faInstagram} className="hero-socials__icon" /> */}
-          <p>Icon</p>
+          <FontAwesomeIcon icon={faInstagram} className="hero-socials__icon" />
         </a>
 
         {/* Linked In */}
         <a
-          href="https://www.facebook.com/KashyAustralia"
+          href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEU0lrrw3JSowAAAYooUD3w2QjXs5Zt4dPrt0-A9KZ3uS1OrDEN2VlYqCKm1FJc7yDS9YDfdpdTt8Y2XGFoNIW3iGHf0ql4FsRGEo-VleJkjs-zDQhH2tZVHfSIDeF7i-LvUMo=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fkashyaustralia%2F"
           target="_blank"
           className="hero-socials__link"
         >
-          {/* <FontAwesomeIcon icon={faLinkedin} className="hero-socials__icon" /> */}
-          <p>Icon</p>
-
+          <FontAwesomeIcon icon={faLinkedin} className="hero-socials__icon" />
         </a>
 
         {/* Youtube */}
         <a
-          href="https://www.facebook.com/KashyAustralia"
+          href="https://www.youtube.com/@kashyaustralia6424"
           target="_blank"
           className="hero-socials__link"
         >
-          {/* <FontAwesomeIcon icon={faYoutube} className="hero-socials__icon" /> */}
-          <p>Icon</p>
-
+          <FontAwesomeIcon icon={faYoutube} className="hero-socials__icon" />
         </a>
       </div>
     </section>
