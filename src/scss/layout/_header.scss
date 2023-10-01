@@ -41,7 +41,7 @@
     @extend %flexItemCenter;
     gap: 100px;
 
-    // For fixing style under 767
+    // For fixing style under 767 Tablet 
     @include abstracts.breakpoint(lg) {
       gap: 40px;
     }
