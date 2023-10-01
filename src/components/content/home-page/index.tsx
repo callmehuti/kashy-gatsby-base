@@ -4,6 +4,7 @@ import React, { FC } from "react";
 import HPIntroduction from "./introduction";
 import HPQuotingForm from "./quoting-form";
 import HPCustomerReviews from "./customer-review";
+import HPMedia from "./media";
 
 const IndexHomePage: FC = () => {
   return (
@@ -21,6 +22,12 @@ const IndexHomePage: FC = () => {
       <section className="review">
         <HPCustomerReviews />
       </section>
+
+      <div className="media">
+        <div className="container">
+          <HPMedia />
+        </div>
+      </div>
     </div>
   );
 };
