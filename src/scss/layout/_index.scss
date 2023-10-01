@@ -1,1 +1,5 @@
+// Layout is for the overall and structure of the page, if it is reusable in other places on the page, it must be here. If not, as it is a specific to a component, please move to components folder.
+
 @forward './header';
+@forward './navbar';
+@forward './footer';

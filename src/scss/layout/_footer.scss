@@ -1,0 +1,40 @@
+@use "../abstracts";
+
+%flexItemCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  padding: 16px 0;
+  font-weight: 100;
+  font-size: 12px;
+
+  &__inner {
+    text-align: center;
+    @extend %flexItemCenter;
+    flex-direction: column;
+    row-gap: 14px;
+  } 
+}
+
+.footer-socials {
+  @extend %flexItemCenter;
+  column-gap: 16px;
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.footer-info {
+  @extend %flexItemCenter;
+  column-gap: 16px;
+}
+
+.terms-conditions {
+    @extend %flexItemCenter;
+    column-gap: 8px;
+}

@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Link } from "gatsby";
+import Navbar from "./navbar";
 
 // Import Icon
 // Was trying to use svg file but not working, so changing to add logo by img instead of vector
@@ -16,6 +16,7 @@ import MyIcon from "../assets/icon/hamburger.svg";
 
 // Import Img
 import MoreImg from "../assets/img/MTAQ-Transparent-Logo.webp";
+import { Nav } from "react-bootstrap";
 
 const Header: FC = () => {
   return (
@@ -27,26 +28,8 @@ const Header: FC = () => {
             <img src={Icon} alt="Logo" className="logo__img" />
           </div>
 
-          {/* Navbar */}
-          <nav className="navbar">
-            <ul className="navbar__list">
-              <li>
-                <Link to="/" className="navbar__link">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/about" className="navbar__link">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link to="/blog" className="navbar__link">
-                  Blog
-                </Link>
-              </li>
-            </ul>
-          </nav>
+          {/* Top navigation  */}
+          <Navbar />
 
           {/* Hamburger Menu */}
           <button className="top-bar__more">
