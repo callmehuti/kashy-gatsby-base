@@ -1,0 +1,41 @@
+@use "../../../abstracts";
+// For doing responsive
+
+.subscribe {
+  padding: 24px 40px 24px;
+  width: 80%;
+}
+
+.subscribe-inner {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.subscribe-form {
+
+  &__label {
+    font-weight: 300;
+    font-size: 2rem;
+  }
+
+  &__text-btn {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__btn {
+    margin-left: 24px;
+  }
+
+  &__btn-cta {
+    --height: 40px;
+
+    min-width: 100px;
+    font-size: 1.5rem;
+    box-shadow: 0px 13px 26px -8px rgba(212, 69, 45, 0.8);
+    background: var(--secondary-color);
+    color: var(--text-color);
+    cursor: pointer;
+  }
+} 

@@ -1,0 +1,13 @@
+@use "../../../abstracts";
+// For responsive
+
+.media-photo-item {
+
+  &__thumb {
+    display: block;
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 10%;
+  }
+}

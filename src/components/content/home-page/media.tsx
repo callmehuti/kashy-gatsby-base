@@ -35,8 +35,8 @@ const HPMedia: FC = () => {
       {/* Left side: Video */}
       <figure className="media-inner__video">
         <iframe
-          width="877"
-          height="561"
+          width="100%"
+          height="100%"
           src="https://www.youtube.com/embed/qHeACpjOj5M"
           title="Should You Change Your Engine Oil"
           frameBorder="0"

@@ -1,0 +1,49 @@
+@use "../../../abstracts";
+// For responsive
+
+%flexItemCenterFull {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.media-inner {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr;
+  column-gap: 16px;
+}
+
+.media-photo {
+
+  &__heading {
+    font-weight: 200;
+  }
+}
+
+.media-photo {
+  text-align: center;
+  height: 100%;
+
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 24px 0;
+    border-radius: 0;
+    background-color: var(--secondary-color);
+    font-weight: 300;
+  }
+
+  &__link {
+    @extend %flexItemCenterFull;
+    column-gap: 8px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    margin-top: 24px;
+  }
+}

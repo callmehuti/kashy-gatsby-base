@@ -1,0 +1,30 @@
+@use "../../../abstracts";
+// For doing responsive
+
+.subscribe-partner {
+  
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.coop-partner {
+  padding: 24px 40px 24px;
+  text-align: center;
+
+  &__heading {
+    font-size: 3rem;
+    margin-bottom: 24px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-evenly;
+    row-gap: 32px;
+  }
+}
