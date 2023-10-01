@@ -1,24 +1,21 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
+import { Link } from "gatsby";
 import Navbar from "./navbar";
-
-// Import Icon
-// Was trying to use svg file but not working, so changing to add logo by img instead of vector
 import Icon from "../assets/img/logo-icon-small.png";
-// Please install plugin
-// https://www.gatsbyjs.com/plugins/gatsby-plugin-fontawesome-css/
-// https://fontawesome.com/docs/apis/javascript/import-icons
-// Check gatsby-config.js to ensure that plugins is added.
-
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faBars } from "@fortawesome/free-solid-svg-icons";
-
 import MyIcon from "../assets/icon/hamburger.svg";
-
-// Import Img
 import MoreImg from "../assets/img/MTAQ-Transparent-Logo.webp";
-import { Nav } from "react-bootstrap";
 
 const Header: FC = () => {
+  const [isMobileNavVisible, setMobileNavVisibility] = useState(false);
+
+  const toggleMobileNav = () => {
+    setMobileNavVisibility(!isMobileNavVisible);
+  };
+
+  const closeMobileNav = () => {
+    setMobileNavVisibility(false);
+  };
+
   return (
     <header id="header" className="header header--fixed">
       <div className="container">
@@ -28,16 +25,44 @@ const Header: FC = () => {
             <img src={Icon} alt="Logo" className="logo__img" />
           </div>
 
-          {/* Top navigation  */}
-          <Navbar />
+          {/* Mobile Navbar */}
+          <nav
+            className={`navbar ${isMobileNavVisible ? "show" : ""}`}
+          >
+            <ul className="navbar__list">
+              <li>
+                <Link to="/" className="navbar__link">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link to="/about" className="navbar__link">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link to="/blog" className="navbar__link">
+                  Blog
+                </Link>
+              </li>
+            </ul>
+          </nav>
+
+          {/* Overlay */}
+          {isMobileNavVisible && (
+            <div
+              className="navbar__overlay"
+              onClick={closeMobileNav}
+            ></div>
+          )}
 
           {/* Hamburger Menu */}
-          <button className="top-bar__more">
-            {/* <FontAwesomeIcon
-              icon={faBars}
-              className="top-bar__more-hamburger"
-            /> */}
-
+          <button
+            className={`top-bar__more js-toggle ${
+              isMobileNavVisible ? "show" : "hide"
+            }`}
+            onClick={toggleMobileNav}
+          >
             <MyIcon className="top-bar__more-hamburger" />
           </button>
 

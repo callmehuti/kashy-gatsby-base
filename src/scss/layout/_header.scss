@@ -36,6 +36,23 @@
   }
 }
 
+.navbar__overlay {
+  visibility: hidden;
+  opacity: 0;
+
+  // For phone
+  @include abstracts.breakpoint(sm) {
+    position: fixed;
+    inset: 0;
+    z-index: 8;
+
+    transition: opacity, visibility;
+    transition-duration: 0.5s;
+
+    background: rgba($color: #000000, $alpha: 0.4);
+  }
+}
+
 .kashy-partner {
   margin-left: auto;
 

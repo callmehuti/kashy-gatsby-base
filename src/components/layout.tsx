@@ -10,7 +10,7 @@ interface LayoutProps {
 // The following function creates the navbar
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div>
+    <div className="layout">
       <Header />
       <main className="content">{children}</main>
       <Footer />

@@ -12,7 +12,7 @@ import {
 const Footer: FC = () => {
   return (
     // Footer
-    <footer className="footer">
+    <footer className="footer footer--fixed">
       <div className="container">
         <div className="footer__inner">
           {/* Social Media */}
@@ -52,7 +52,7 @@ const Footer: FC = () => {
                 icon={faInstagram}
                 className="footer-socials__icon"
               />
-            </a>
+            </a> 
           </div>
 
           <div className="footer-info">
